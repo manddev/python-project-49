@@ -29,5 +29,3 @@ def make_game_data():
 
     return (question, correct_answer)
 
-def start_game():
-    make_game(DESCRIPTION, make_game_data)
