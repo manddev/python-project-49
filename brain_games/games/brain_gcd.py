@@ -1,6 +1,6 @@
 import math
 from random import randint
-from brain_games.games_core import make_game
+
 
 RANDINT_MIN_VALUE = 1
 RANDINT_MAX_VALUE = 100
@@ -15,7 +15,3 @@ def make_game_data():
     correct_answer = str(math.gcd(current_number1, current_number2))
 
     return (question, correct_answer)
-
-def start_game():
-    make_game(DESCRIPTION, make_game_data)
-

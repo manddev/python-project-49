@@ -22,4 +22,3 @@ def make_game_data():
     correct_answer = 'yes' if is_prime(current_number) else 'no'
 
     return (question, correct_answer)
-

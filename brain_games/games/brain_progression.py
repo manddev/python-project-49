@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games_core import make_game
+
 
 RANDINT_MIN_VALUE = 1
 RANDINT_MAX_VALUE = 100
@@ -24,10 +24,3 @@ def make_game_data():
     question = ' '.join(str(e) for e in progression)
 
     return (question, correct_answer)
-
-def start_game():
-    make_game(DESCRIPTION, make_game_data)
-
-
-
-
