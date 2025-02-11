@@ -11,7 +11,8 @@ def make_game(description, make_game_data):
         (question, correct_answer) = make_game_data()
         user_answer = prompt.string(f'{question}\nYour answer: ')
         if correct_answer != user_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {user_name}!")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {user_name}!")
             return
         else:
             print('Correct!')
