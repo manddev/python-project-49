@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 
 RANDINT_MIN_VALUE = 1
@@ -21,7 +21,7 @@ DESCRIPTION = 'What is the result of the expression?'
 
 def make_game_data():
     operations = ["*", "+", "-"]
-    current_operation = operations[randint(0, len(operations) - 1)]
+    current_operation = choice(operations)
     num1 = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
     num2 = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
     question = f'{num1} {current_operation} {num2}'
