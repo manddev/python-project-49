@@ -1,4 +1,5 @@
-from brain_games.games.brain_calc import start_game
+from brain_games.games_core import make_game
+from brain_games.games.brain_calc import make_game_data, DESCRIPTION
 
 def main():
-    start_game()
+    make_game(DESCRIPTION, make_game_data)
