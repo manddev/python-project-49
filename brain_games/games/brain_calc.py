@@ -1,8 +1,8 @@
-from random import randint, choice
-
+from random import choice, randint
 
 RANDINT_MIN_VALUE = 1
 RANDINT_MAX_VALUE = 100
+
 
 def calculate_expression(num1, num2, operation):
     match operation:
@@ -16,8 +16,8 @@ def calculate_expression(num1, num2, operation):
             return None
         
 
-
 DESCRIPTION = 'What is the result of the expression?'
+
 
 def make_game_data():
     operations = ["*", "+", "-"]

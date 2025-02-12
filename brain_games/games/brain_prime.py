@@ -1,10 +1,10 @@
-from random import randint 
-
+from random import randint
 
 RANDINT_MIN_VALUE = 1
 RANDINT_MAX_VALUE = 100
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def is_prime(num):
     if num < 2:
@@ -15,6 +15,7 @@ def is_prime(num):
             return False
         
     return True
+
 
 def make_game_data():
     current_number = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)

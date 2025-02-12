@@ -1,12 +1,12 @@
 import math
 from random import randint
 
-
 RANDINT_MIN_VALUE = 1
 RANDINT_MAX_VALUE = 100
 
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
 
 def make_game_data():
     current_number1 = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
