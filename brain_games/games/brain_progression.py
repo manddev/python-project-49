@@ -16,7 +16,7 @@ def make_game_data():
     for i in range(PROGRESSION_LENGTH):
         progression.append(str(initial_value + i * step_value))
 
-    hidden_element_index = randint(0, PROGRESSION_LENGTH)
+    hidden_element_index = randint(0, PROGRESSION_LENGTH - 1)
     correct_answer = progression[hidden_element_index]
     progression[hidden_element_index] = '..'
     question = ' '.join(progression)
