@@ -10,17 +10,15 @@ PROGRESSION_LENGTH = 10
 def make_game_data():
     
     progression = []
-    first_element = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
-    progression_step = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
-    progression.append(first_element)
+    progression_initial_value = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
+    progression_step_value = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
+    progression = [str(progression_initial_value + i * progression_step_value) for i in range(PROGRESSION_LENGTH)]
 
-    for i in range(0, PROGRESSION_LENGTH - 1):
-        next_element = progression[i] + progression_step
-        progression.append(next_element)
+    
 
     hidden_element_index = randint(1, PROGRESSION_LENGTH - 1)
-    correct_answer = str(progression[hidden_element_index])
+    correct_answer = progression[hidden_element_index]
     progression[hidden_element_index] = '..'
-    question = ' '.join(str(e) for e in progression)
+    question = ' '.join(progression)
 
     return (question, correct_answer)
