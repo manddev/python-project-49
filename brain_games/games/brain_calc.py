@@ -2,6 +2,7 @@ from random import choice, randint
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
+
 DESCRIPTION = 'What is the result of the expression?'
 
 

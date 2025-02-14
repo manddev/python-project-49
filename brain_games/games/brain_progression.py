@@ -2,9 +2,9 @@ from random import randint
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
+PROGRESSION_LENGTH = 10
 
 DESCRIPTION = 'What number is missing in the progression?'
-PROGRESSION_LENGTH = 10
 
 
 def make_game_data():
