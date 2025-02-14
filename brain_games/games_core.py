@@ -21,4 +21,4 @@ def run_game(description, make_game_data):
         else:
             print('Correct!')
 
-    print(f"Congratulations, {user_name}!")
+    print(f'Congratulations, {user_name}!')

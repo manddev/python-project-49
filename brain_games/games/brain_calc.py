@@ -9,16 +9,16 @@ def calculate_expression(num1, num2, operation):
     match operation:
         case '*':
             return num1 * num2
-        case "-":
+        case '-':
             return num1 - num2
-        case "+":
+        case '+':
             return num1 + num2
         case _:
             return None
 
 
 def make_game_data():
-    operations = ["*", "+", '-']
+    operations = ['*', '+', '-']
     current_operation = choice(operations)
     num1 = randint(MIN_NUMBER, MAX_NUMBER)
     num2 = randint(MIN_NUMBER, MAX_NUMBER)
