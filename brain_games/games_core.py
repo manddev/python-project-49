@@ -3,7 +3,7 @@ import prompt
 rounds_count = 3
 
 
-def make_game(description, make_game_data):
+def run_game(description, make_game_data):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!\n{description}')
