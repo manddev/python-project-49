@@ -1,7 +1,7 @@
 from random import randint
 
-RANDINT_MIN_VALUE = 1
-RANDINT_MAX_VALUE = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
 def is_even(num):
@@ -12,7 +12,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def make_game_data():
-    current_number = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
+    current_number = randint(MIN_NUMBER, MAX_NUMBER)
     question = f'{current_number}'
     correct_answer = 'yes' if is_even(current_number) else 'no'
 

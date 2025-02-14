@@ -1,7 +1,7 @@
 from random import randint
 
-RANDINT_MIN_VALUE = 1
-RANDINT_MAX_VALUE = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LENGTH = 10
@@ -10,8 +10,8 @@ PROGRESSION_LENGTH = 10
 def make_game_data():
     
     progression = []
-    initial_value = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
-    step_value = randint(RANDINT_MIN_VALUE, RANDINT_MAX_VALUE)
+    initial_value = randint(MIN_NUMBER, MAX_NUMBER)
+    step_value = randint(MIN_NUMBER, MAX_NUMBER)
 
     for i in range(PROGRESSION_LENGTH):
         progression.append(str(initial_value + i * step_value))
