@@ -18,7 +18,7 @@ def calculate_expression(num1, num2, operation):
 
 
 def make_game_data():
-    operations = ["*", "+", "-"]
+    operations = ["*", "+", '-']
     current_operation = choice(operations)
     num1 = randint(MIN_NUMBER, MAX_NUMBER)
     num2 = randint(MIN_NUMBER, MAX_NUMBER)

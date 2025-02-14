@@ -1,6 +1,6 @@
-from brain_games.games.brain_progression import DESCRIPTION, make_game_data
-from brain_games.games_core import make_game
+from brain_games.games import brain_progression
+from brain_games.games_core import run_game
 
 
 def main():
-    make_game(DESCRIPTION, make_game_data)
+    run_game(brain_progression.DESCRIPTION, brain_progression.make_game_data)
