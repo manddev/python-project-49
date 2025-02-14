@@ -22,6 +22,3 @@ def make_game_data():
     question = ' '.join(progression)
 
     return (question, correct_answer)
-
-
-make_game_data()
