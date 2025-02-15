@@ -7,8 +7,7 @@ PROGRESSION_LENGTH = 10
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def make_game_data():
-    
+def make_game_data(): 
     progression = []
     initial_value = randint(MIN_NUMBER, MAX_NUMBER)
     step_value = randint(MIN_NUMBER, MAX_NUMBER)
